@@ -1,0 +1,14 @@
+services:
+  machine-a:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: machineA
+    tty: true
+    
+  machine-b:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: machineB
+    tty: true
